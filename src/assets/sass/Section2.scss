@@ -1,0 +1,95 @@
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+
+    .left {
+        width: 47%;
+        opacity: 0;
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+    }
+
+    .right {
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .top,
+        .bottom {
+            opacity: 0;
+            transform: translateY(-50px);
+            -webkit-transform: translateY(-50px);
+            -moz-transform: translateY(-50px);
+            -ms-transform: translateY(-50px);
+            -o-transform: translateY(-50px);
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+
+            &.active {
+                opacity: 1;
+                transform: translateY(0);
+                -webkit-transform: translateY(0);
+                -moz-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+            }
+
+            h3 {
+                font-size: 2rem;
+                color: #333;
+            }
+
+            h4 {
+                font-size: 1rem;
+                color: #777;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #333;
+
+                span {
+                    font-size: 3rem;
+                    color: orangered;
+                }
+            }
+        }
+    }
+}

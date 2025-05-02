@@ -1,0 +1,28 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px); //뒤에 깔린 것들을 흐릿하게 처리
+
+  .logo{
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+  .nav-links { 
+    margin-right: 10rem;
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    a {
+      text-decoration: none;
+      color: #444;
+    }
+  }
+}
